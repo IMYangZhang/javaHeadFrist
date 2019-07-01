@@ -8,7 +8,7 @@ import com.example.headfirstjava.model.abstractFactory.styleFactory.ManStyleFact
 import com.example.headfirstjava.model.abstractFactory.styleFactory.StyleFactory;
 
 public class customer {
-    // 购买春天的儿童款套装
+    // 购买春天的成人款套装
     public Iclothes buy(){
         StyleFactory styleFactory=new ManStyleFactory();
         AbstractClothesFactory factory=new SpringFactory(styleFactory);
