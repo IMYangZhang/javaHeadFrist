@@ -1,9 +1,9 @@
-package com.example.headfirstjava.model.stregaty;
+package com.example.headfirstjava.model.stragety;
 
-import com.example.headfirstjava.model.stregaty.behavior.EatHot;
-import com.example.headfirstjava.model.stregaty.behavior.SportRun;
-import com.example.headfirstjava.model.stregaty.famity.Father;
-import com.example.headfirstjava.model.stregaty.famity.Mama;
+import com.example.headfirstjava.model.stragety.behavior.EatHot;
+import com.example.headfirstjava.model.stragety.behavior.SportRun;
+import com.example.headfirstjava.model.stragety.famity.Father;
+import com.example.headfirstjava.model.stragety.famity.Mama;
 
 public class MainStregaty {
     Father father=new Father();

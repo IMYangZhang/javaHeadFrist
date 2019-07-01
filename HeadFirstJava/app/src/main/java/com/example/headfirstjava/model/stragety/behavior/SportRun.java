@@ -1,6 +1,6 @@
-package com.example.headfirstjava.model.stregaty.behavior;
+package com.example.headfirstjava.model.stragety.behavior;
 
-import com.example.headfirstjava.model.stregaty.iStregaty.Isports;
+import com.example.headfirstjava.model.stragety.iStregaty.Isports;
 
 public class SportRun implements Isports {
     @Override

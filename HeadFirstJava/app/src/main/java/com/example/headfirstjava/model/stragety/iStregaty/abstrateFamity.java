@@ -1,6 +1,4 @@
-package com.example.headfirstjava.model.stregaty.iStregaty;
-
-import android.widget.Toast;
+package com.example.headfirstjava.model.stragety.iStregaty;
 
 public abstract class abstrateFamity {
     public Isports isports;
