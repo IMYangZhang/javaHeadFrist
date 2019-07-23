@@ -12,12 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.headfirstjava.model.decorator.doDecorator;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,View.OnClickListener {
 
     private TextView tv_stregaty,tv_observer;
+    private Button btn_decorator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         initView();
+        initListen();
     }
 
     @Override
@@ -58,14 +63,23 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-
+        int id=v.getId();
+        switch (id){
+            case R.id.btn_decorator:
+                new doDecorator().execute();
+            break;
+        }
     }
 
     private void initView(){
         tv_stregaty=findViewById(R.id.tv_stategy);
         tv_observer=findViewById(R.id.tv_observer);
+        btn_decorator = findViewById(R.id.btn_decorator);
     }
 
+    private void initListen(){
+        btn_decorator.setOnClickListener(this);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
